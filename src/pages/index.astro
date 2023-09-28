@@ -1,85 +1,99 @@
 ---
-import DefaultLayout from '../layouts/DefaultLayout.astro'
-import Hero from '../components/Hero.astro'
-import Feature from '../components/Feature.astro'
-import Counter from '../components/Counter.astro'
-import ContentMedia from '../components/ContentMedia.astro'
+import DefaultLayout from '../layouts/DefaultLayout.astro';
+import Hero from '../components/Hero.astro';
+import Feature from '../components/Feature.astro';
+import Counter from '../components/Counter.astro';
+import ContentMedia from '../components/ContentMedia.astro';
 ---
 
-<DefaultLayout title="Home">
+<DefaultLayout title='Home'>
   <Hero />
-  <section class="my-64">
-    <div class="container">
-      <h2 class="mb-16 text-6xl">What we do</h2>
-      <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
-        <Feature icon="mdi:square-opacity" title="BRANDING">
-          Emotion, purpose, values, vison - all the buzzwords and logos too! 
+  <section class='my-64'>
+    <div class='container'>
+      <h2 class='mb-16 text-6xl'>What we do</h2>
+      <div class='grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3'>
+        <Feature icon='mdi:square-opacity' title='BRANDING'>
+          Emotion, purpose, values, vison - all the buzzwords and logos too!
         </Feature>
-        <Feature icon="mdi:nature-people" title="EVENTS & ACTIVATIONS">
+        <Feature icon='mdi:nature-people' title='EVENTS & ACTIVATIONS'>
           Real life is still a thing (for now), and real humans interact in physical space.
         </Feature>
-        <Feature icon="mdi:brain" title="STRATEGIC CREATIVE">
+        <Feature icon='mdi:brain' title='STRATEGIC CREATIVE'>
           Concept development for campaigns, products, experiences, art direction ... you know, ideas.
         </Feature>
-        <Feature icon="mdi:book-open-page-variant" title="GRAPHIC DESIGN">
-          The practice or profession of designing print or electronic forms of visual information, as for an advertisement, publication, or website. Apparently, according to thefreedictionary.com
+        <Feature icon='mdi:book-open-page-variant' title='GRAPHIC DESIGN'>
+          The practice or profession of designing print or electronic forms of visual information, as for an
+          advertisement, publication, or website. Apparently, according to thefreedictionary.com
         </Feature>
-        <Feature icon="mdi:unicorn" title="UX/UI">
+        <Feature icon='mdi:unicorn' title='UX/UI'>
           What does it mean? No-one really knows and if they do someone will disagree. But we are pretty sure we do it.
         </Feature>
-        <Feature icon="mdi:creation" title="MISC...">
+        <Feature icon='mdi:creation' title='MISC...'>
           Video production, animation, social media, websites, print, popups etc.
         </Feature>
       </div>
     </div>
   </section>
-  <ContentMedia imgSrc="/accessible-components.webp">
+  <ContentMedia imgSrc='/accessible-components.webp'>
     <h2>Accessible Components</h2>
-    <p class="text-2xl">
+    <p class='text-2xl'>
       This theme provides plenty of tried and tested Accessible Astro Components. Some are native to this theme and a
-      lot of others are integrated using a <a href="https://github.com/markteekman/accessible-astro-components"
+      lot of others are integrated using a <a href='https://github.com/markteekman/accessible-astro-components'
         >separate package</a
       >. They'll get you up and running in building an accessible solution for your visitors.
     </p>
   </ContentMedia>
-  <ContentMedia imgSrc="/wcag-compliant.webp" reverseImg={true}>
+  <ContentMedia imgSrc='/wcag-compliant.webp' reverseImg={true}>
     <h2>WCAG 2.1 AA Compliant</h2>
-    <p class="text-2xl">
+    <p class='text-2xl'>
       Using semantic HTML, landmarks, skip links, screen reader friendly content, aria-labels, keyboard accessible
       navigation and components, clear outlines and tab indicators and the right color contrast, you're more certain of
       reaching WCAG AA compliance.
     </p>
   </ContentMedia>
-  <section class="mt-64 mb-32">
-    <div class="container">
-      <h2 class="mb-16 text-6xl">Counters</h2>
-      <div class="grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-4">
-        <Counter count="130" title="Stars" sub="On GitHub" />
-        <Counter count="17" title="Accessible" sub="Components" />
-        <Counter count="500" title="Commits" sub="Merged" />
-        <Counter count="18+" title="Months" sub="Since launch" />
+  <section class='mb-32 mt-64'>
+    <div class='container'>
+      <h2 class='mb-16 text-6xl'>Counters</h2>
+      <div class='grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-4'>
+        <Counter count='130' title='Stars' sub='On GitHub' />
+        <Counter count='17' title='Accessible' sub='Components' />
+        <Counter count='500' title='Commits' sub='Merged' />
+        <Counter count='18+' title='Months' sub='Since launch' />
       </div>
-  
     </div>
   </section>
-  <section class="mt-64 mb-32">
-    <div class="container">
-      <h2 class="mb-16 text-6xl ">Lets touch base yeah</h2>
-        <form class=" max-w-screen-md"
-action="https://formspree.io/f/mbjvzzvz"
-method="POST"
->
-<label class="block text-2xl astro-X63RDSGB font-regular mb-2" >
-  Your email address:
-  <input type="email" name="email" class="shadow appearance-none border-none  w-full py-2 px-3 text-gray-600 leading-tight focus:outline-none focus:shadow-outline" id="email" type="text" required>
-</label>
-<label class="block text-2xl astro-X63RDSGB font-regular mb-2" >
-  Your message to us:
-  <textarea name="message" class="shadow appearance-none border-none  w-full py-2 px-3 text-gray-700 leading-tight  focus:outline-none focus:shadow-outline" id="message" type="text" required></textarea>
-</label>
-<!-- your other form fields go here -->
-<button name="submit" type="submit" class="w-1/2 bg-blue-500 border-none hover:bg-blue-700 text-white font-bold py-2 px-4  focus:outline-none focus:shadow-outline">Send your message</button>
-</form>
+  <section class='mb-32 mt-64'>
+    <div class='container'>
+      <h2 class='mb-16 text-6xl'>Lets touch base yeah</h2>
+      <form class='max-w-screen-md' action='https://formspree.io/f/mbjvzzvz' method='POST'>
+        <label class='astro-X63RDSGB font-regular mb-2 block text-2xl'>
+          Your email address:
+          <input
+            type='email'
+            name='email'
+            class='focus:shadow-outline w-full appearance-none border-none px-3 py-2 leading-tight text-gray-600 shadow focus:outline-none'
+            id='email'
+            type='text'
+            required
+          />
+        </label>
+        <label class='astro-X63RDSGB font-regular mb-2 block text-2xl'>
+          Your message to us:
+          <textarea
+            name='message'
+            class='focus:shadow-outline w-full appearance-none border-none px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none'
+            id='message'
+            type='text'
+            required></textarea>
+        </label>
+        <!-- your other form fields go here -->
+        <button
+          name='submit'
+          type='submit'
+          class='focus:shadow-outline w-1/2 border-none bg-blue-500 px-4 py-2 font-bold text-white hover:bg-blue-700 focus:outline-none'
+          >Send your message</button
+        >
+      </form>
     </div>
   </section>
 </DefaultLayout>
