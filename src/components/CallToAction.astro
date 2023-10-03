@@ -1,7 +1,34 @@
 <div class="container">
   <div class="call-to-action mt-24 mb-32 flex flex-col items-center gap-12 rounded-xl p-12 md:p-24">
-    <h2 class="text-center text-3xl md:text-5xl">Get this theme on GitHub</h2>
-    <a href="https://github.com/markteekman/accessible-astro-starter" class="text-center text-lg"> Use this theme</a>
+    <h2 class="text-center text-3xl md:text-5xl">Lets touch base yeah</h2>
+        <form class='max-w-screen-md' action='https://formspree.io/f/mbjvzzvz' method='POST'>
+          <label class='astro-X63RDSGB font-regular mb-3 block text-2xl'>
+            Your email address:
+            <input
+              type='email'
+              name='email'
+              class='focus:shadow-outline w-full appearance-none border-none px-3 py-2 leading-tight text-gray-600 shadow focus:outline-none rounded'
+              id='email'
+              type='text'
+              required
+            />
+          </label>
+          <label class='astro-X63RDSGB font-regular mb-3 block text-2xl'>
+            Your message to us:
+            <textarea
+              name='message'
+              class='focus:shadow-outline w-full appearance-none border-none px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none rounded'
+              id='message'
+              type='text'
+              required></textarea>
+          </label>
+          <!-- your other form fields go here -->
+          <button
+            name='submit'
+            type='submit'
+            class="text-center text-lg"
+            >Send your message</button>
+        </form>
   </div>
 </div>
 
@@ -12,7 +39,7 @@
   }
 
   .call-to-action a:not(button),
-  .call-to-action a:not(button):visited {
+  .call-to-action a:not(button):visited,.call-to-action button {
     padding: 1rem;
     color: var(--neutral-900);
     font-weight: bold;

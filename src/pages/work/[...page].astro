@@ -1,8 +1,9 @@
 ---
 import DefaultLayout from '../../layouts/DefaultLayout.astro'
 import { Card, Pagination } from 'accessible-astro-components'
-import workPosts from '../../data/workposts.json';
 
+import workPosts from '../../data/workposts.json';
+---
 
 export async function getStaticPaths({ paginate }) {
   const response = workPosts
