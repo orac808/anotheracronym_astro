@@ -6,7 +6,7 @@ import { DarkMode } from 'accessible-astro-components'
 <div id="main-navigation" class="is-desktop py-8">
   <div class="container">
     <a href="/" class="flex items-center gap-2 !no-underline">
-      <img src={(await import('../assets/img/anotheracronym_logo.svg')).default} alt="Another Acronym" width="200" height="100" />
+      <img src={(await import('../assets/img/anotheracronym_logo.svg')).default} alt="Another Acronym" width="200" height="100" id="logo" />
     </a>
     <div class="wrapper">
       <nav class="desktop-menu" aria-label="Main navigation desktop">
@@ -372,6 +372,10 @@ import { DarkMode } from 'accessible-astro-components'
     }
   }
 
+
+  .darkmode #logo{
+    filter: invert(100%);
+  }
   .darkmode-toggle {
     padding: 0;
     border: none;
